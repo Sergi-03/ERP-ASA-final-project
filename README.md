@@ -1,81 +1,118 @@
-# WebApp boilerplate with React JS and Flask API
+ERP (Enterprise Resource Planning) - ASA Final Project
+Descripción
+Este es un proyecto colaborativo de desarrollo de un Sistema de Planificación de Recursos Empresariales (ERP), diseñado para gestionar diferentes procesos dentro de una empresa, como la administración de inventarios, ventas, compras, recursos humanos, contabilidad y más.
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+Este sistema es modular y escalable, con un frontend interactivo desarrollado en React.js y un backend robusto utilizando Flask con PostgreSQL como base de datos.
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+Características
+Gestión de inventarios: Control de productos, proveedores, y niveles de stock.
+Gestión de ventas: Registro de órdenes de venta, facturación y reportes.
+Gestión de compras: Control de órdenes de compra, proveedores y pagos.
+Gestión de recursos humanos: Administración de empleados, sueldos y ausencias.
+Contabilidad: Registro de ingresos y egresos, balance de cuentas y reportes financieros.
+Tecnologías
+Este ERP está desarrollado utilizando las siguientes tecnologías:
 
-### 1) Installation:
+Frontend:
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+React.js: Biblioteca para la construcción de interfaces de usuario dinámicas y reactivas.
+Webpack: Herramienta de empaquetado de módulos para aplicaciones frontend.
+Backend:
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
+Flask: Micro-framework para el desarrollo de APIs RESTful en Python.
+PostgreSQL: Sistema de gestión de bases de datos relacional.
+SQLAlchemy: ORM utilizado en Flask para interactuar con la base de datos.
+Gestión de dependencias:
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+Pipenv: Herramienta para la gestión de dependencias y entornos virtuales en Python.
+Requisitos
+Para ejecutar este proyecto, necesitarás tener instalados los siguientes programas en tu máquina:
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+Python 3.x: Para ejecutar el backend.
+Node.js: Para ejecutar el frontend.
+PostgreSQL: Para la base de datos.
+Instalación
+1. Clonar el repositorio
+Clona el repositorio a tu máquina local:
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+bash
+Copiar
+git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
+2. Instalar dependencias
+Accede a la carpeta del proyecto y realiza las siguientes acciones:
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+Backend (Flask):
+Navega a la carpeta del backend:
 
-### Undo a migration
+bash
+Copiar
+cd backend
+Instala las dependencias del backend utilizando pipenv:
 
-You are also able to undo a migration by running
+bash
+Copiar
+pipenv install
+Inicia el entorno virtual:
 
-```sh
-$ pipenv run downgrade
-```
+bash
+Copiar
+pipenv shell
+Frontend (React):
+Navega a la carpeta del frontend:
 
-### Backend Populate Table Users
+bash
+Copiar
+cd frontend
+Instala las dependencias del frontend con npm:
 
-To insert test users in the database execute the following command:
+bash
+Copiar
+npm install
+3. Configurar la base de datos
+Asegúrate de tener PostgreSQL instalado y configurado correctamente. Puedes modificar las configuraciones de la base de datos en los archivos de configuración según sea necesario.
 
-```sh
-$ flask insert-test-users 5
-```
+4. Ejecutar el proyecto
+Backend (Flask):
+Para ejecutar el servidor del backend, dentro de la carpeta del backend, utiliza el siguiente comando:
 
-And you will see the following message:
+bash
+Copiar
+python app.py
+Frontend (React):
+Para iniciar el servidor de desarrollo de React, dentro de la carpeta del frontend, ejecuta:
 
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
+bash
+Copiar
+npm start
+El frontend estará disponible en http://localhost:3000 y el backend en http://localhost:5000.
 
-### **Important note for the database and the data inside it**
+5. Acceder a la aplicación
+Una vez que ambos servidores estén en funcionamiento, podrás acceder a la aplicación a través de tu navegador en las siguientes direcciones:
 
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
+Frontend (React): http://localhost:3000
+Backend (Flask API): http://localhost:5000
+Contribución
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-### Front-End Manual Installation:
+Haz un fork de este repositorio.
+Crea una rama para tu característica o corrección de error:
+bash
+Copiar
+git checkout -b nombre-de-la-rama
+Realiza tus cambios y haz commit de ellos:
+bash
+Copiar
+git commit -m "Descripción de los cambios realizados"
+Empuja tus cambios a tu repositorio remoto:
+bash
+Copiar
+git push origin nombre-de-la-rama
+Abre un pull request desde tu rama hacia la rama principal del repositorio.
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
+Miembros del equipo
+Miembro 1: [Alejandro, Full Stack]
+Miembro 2: [Sergi, Full Stack]
+Miembro 3: [Álvaro, Full Stack]
 
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
