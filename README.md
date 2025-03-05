@@ -32,10 +32,6 @@ Este ERP está desarrollado utilizando las siguientes tecnologías:
 - [Sergi]("https://github.com/Sergi-03")
 - [Álvaro]("https://github.com/RGAlvaro")
 
-## Licencia
-
-Este proyecto está bajo la [Licencia XYZ](enlace-a-la-licencia) - ver el archivo LICENSE para más detalles.
-
 ## Contacto
 
 Si tienes preguntas o comentarios, no dudes en contactar en: [ssegarragarcia@gmail.com]
