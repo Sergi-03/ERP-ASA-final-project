@@ -38,6 +38,7 @@ Clona el repositorio a tu máquina local:
 bash
 Copiar
 git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
+
 2. Instalar dependencias
 Accede a la carpeta del proyecto y realiza las siguientes acciones:
 
@@ -108,8 +109,6 @@ bash
 Copiar
 git push origin nombre-de-la-rama
 Abre un pull request desde tu rama hacia la rama principal del repositorio.
-Licencia
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
 Miembros del equipo
 Miembro 1: [Alejandro, Full Stack]
