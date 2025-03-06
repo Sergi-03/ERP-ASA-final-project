@@ -26,12 +26,11 @@ Este ERP está desarrollado utilizando las siguientes tecnologías:
 - **Gestión de dependencias**:
   - Pipenv: Herramienta para la gestión de dependencias y entornos virtuales en Python.
 
-## Colaboradores
+## Uso
 
-- [Alejandro]("https://github.com/AlejandroGC19")
-- [Sergi]("https://github.com/Sergi-03")
-- [Álvaro]("https://github.com/RGAlvaro")
-
-## Contacto
-
+1. **Clona el repositorio**  
+   ```bash
+   git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
+   cd ERP-ASA-final-project
+   
 Si tienes preguntas o comentarios, no dudes en contactar en: [ssegarragarcia@gmail.com]
