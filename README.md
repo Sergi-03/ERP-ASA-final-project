@@ -39,13 +39,12 @@ cd ERP-ASA-final-project
 pipenv install
 pipenv shell
 ```
-
-### 3. Configurar la base de datos
-Asegúrate de tener PostgreSQL instalado y crea una base de datos:
-```sql
-CREATE DATABASE erp_asa;
+### 3. Configura la base de datos
+```bash
+flask db init
+flask db migrate -m "Initial migration."
+flask db upgrade
 ```
-Configura las variables de entorno con las credenciales de tu base de datos en un archivo `.env`.
 
 ### 4. Ejecutar el backend
 ```bash
