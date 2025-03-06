@@ -28,9 +28,43 @@ Este ERP está desarrollado utilizando las siguientes tecnologías:
 
 ## Uso
 
-1. **Clona el repositorio**  
-   ```bash
-   git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
-   cd ERP-ASA-final-project
-   
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
+cd ERP-ASA-final-project
+```
+
+### 2. Configurar el entorno virtual y dependencias
+```bash
+pipenv install
+pipenv shell
+```
+
+### 3. Configurar la base de datos
+Asegúrate de tener PostgreSQL instalado y crea una base de datos:
+```sql
+CREATE DATABASE erp_asa;
+```
+Configura las variables de entorno con las credenciales de tu base de datos en un archivo `.env`.
+
+### 4. Ejecutar el backend
+```bash
+flask run
+```
+
+### 5. Iniciar el frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+
+## Colaboradores
+
+- [Alejandro](https://github.com/AlejandroGC19)
+- [Sergi](https://github.com/Sergi-03)
+- [Álvaro](https://github.com/RGAlvaro)
+
+## Contacto
+
 Si tienes preguntas o comentarios, no dudes en contactar en: [ssegarragarcia@gmail.com]
