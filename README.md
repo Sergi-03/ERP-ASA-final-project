@@ -66,4 +66,4 @@ npm start
 
 ## Contacto
 
-Si tienes preguntas o comentarios, no dudes en contactar en: [ssegarragarcia@gmail.com]
+Si tienes preguntas o comentarios, no dudes en contactarme en: [ssegarragarcia@gmail.com]
