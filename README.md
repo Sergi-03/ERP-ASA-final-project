@@ -12,8 +12,6 @@ Este es un proyecto colaborativo de desarrollo de un Sistema de Planificación d
 
 ## Tecnologías
 
-Este ERP está desarrollado utilizando las siguientes tecnologías:
-
 ### Frontend
 
 <img width="1280" alt="Captura de pantalla 2025-04-30 a las 14 06 46" src="https://github.com/user-attachments/assets/e9cc0396-11e2-450e-9633-7d17e91694ee" />
@@ -37,8 +35,9 @@ Este ERP está desarrollado utilizando las siguientes tecnologías:
 - **PostgreSQL**: Sistema de gestión de bases de datos relacional.
 - **SQLAlchemy**: ORM utilizado en Flask para interactuar con la base de datos.
 
-- **Gestión de dependencias**:
-  - Pipenv: Herramienta para la gestión de dependencias y entornos virtuales en Python.
+### Gestión de dependencias
+
+- **Pipenv**: Herramienta para la gestión de dependencias y entornos virtuales en Python.
 
 ## Uso
 
@@ -46,38 +45,4 @@ Este ERP está desarrollado utilizando las siguientes tecnologías:
 ```bash
 git clone https://github.com/Sergi-03/ERP-ASA-final-project.git
 cd ERP-ASA-final-project
-```
 
-### 2. Configurar el entorno virtual y dependencias
-```bash
-pipenv install
-pipenv shell
-```
-### 3. Configura la base de datos
-```bash
-flask db init
-flask db migrate -m "Initial migration."
-flask db upgrade
-```
-
-### 4. Ejecutar el backend
-```bash
-flask run
-```
-
-### 5. Iniciar el frontend
-```bash
-cd frontend
-npm install
-npm start
-```
-
-## Colaboradores
-
-- [Alejandro](https://github.com/AlejandroGC19)
-- [Sergi](https://github.com/Sergi-03)
-- [Álvaro](https://github.com/RGAlvaro)
-
-## Contacto
-
-Si tienes preguntas o comentarios, no dudes en contactarme en: [ssegarragarcia@gmail.com]
